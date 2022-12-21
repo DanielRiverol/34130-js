@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    font-family: 'Helvetica', sans-serif;
+}
+
+span {
+    font-family: 'Anton', sans-serif;
+
+    letter-spacing: 5px;
+    background-color: #e0ff00;
+    padding: 0 0.4rem;
+    font-style: italic;
+}
+
+.card {
+    margin-top: 10px;
+    padding: 5px;
+    width: 200px;
+    height: 350px;
+    border: 1.5px solid #777;
+    border-radius: 5px;
+    color: #030255;
+}
+
+.tituloPrincipal {
+    text-transform: capitalize;
+}
+
+.box {
+    height: 120px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0ff00;
+    border-radius: 8px;
+}
