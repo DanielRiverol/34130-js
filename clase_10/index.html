@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <h1 id="titulo"><span></span></h1>
+      <hr />
+      <h2 id="secundario"></h2>
+
+      <!-- input -->
+      <main>
+        <label for="ingreso">Buscar servicio</label>
+        <input type="text" name="ingreso"  value="" id="ingreso" />
+
+        <button id="btnSearch" class="btn btn-info">BUSCAR</button>
+        <!-- Aca se pinta la card -->
+        <div id="contenedor">
+          <!-- contenido dinamico -->
+        </div>
+      </main>
+      <select name="paises" id="selectPais">
+        <option value="Default">Seleccione un país</option>
+        <!-- contenido dinamico -->
+      </select>
+      <ul id="lista"></ul>
+
+      <p id="info"></p>
+
+      <!-- formulario -->
+     <!--  <div class="row">
+        <div class="col offset-3">
+          <div class="card">
+            <div class="card-title">
+              <h4>Inicio de Sesión</h4>
+            </div>
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pass" class="form-label">Password</label>
+                <input type="password" class="form-control" id="pass" />
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check" />
+                <label class="form-check-label" for="check">Recordar</label>
+              </div>
+              <button type="submit" class="btn btn-primary" id="ingresar">Ingresar</button>
+              <p id="mensaje"></p>
+            </form>
+          </div>
+        </div>
+      </div> -->
+    </main>
+    <!-- Recomendado -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
