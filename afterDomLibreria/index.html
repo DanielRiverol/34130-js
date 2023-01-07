@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Inventario de libros</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <h1>Inventario de Libros</h1>
+      </div>
+      <div class="row">
+        <div class="col m3">
+          <div class="row"><h3>Ingresa un libro</h3></div>
+          <div class="row">
+            <form class="col s12" id="formInventario">
+              <div class="row">
+                <div class="input-field col m12 s12">
+                  <input
+                    id="titulo"
+                    type="text"
+                    class="validate"
+                  />
+                  <label for="titulo">Título</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col m12 s12">
+                  <input
+                    id="autor"
+                    type="text"
+                    class="validate"
+                  />
+                  <label for="autor">Autor</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input
+                    id="isbn"
+                    type="text"
+                    class="validate"
+                  />
+                  <label for="isbn">ISBN</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input
+                    id="categoria"
+                    type="text"
+                    class="validate"
+                  />
+                  <label for="categoria">Categoría</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="precio" type="text" class="validate" />
+                  <label for="precio">Precio</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <label for="img">Imagen url</label>
+                  <input id="img" type="text" class="validate" />
+                </div>
+              </div>
+              <input type="submit" id="btnGuardar" class="btn" value="Guardar">
+              </div>
+            </form>
+          </div>
+          <div class="col m1"></div>
+          <div class="col m8 s4 m7" id="contenedor">
+            <!-- Cuadro de búsqueda -->
+            <div class="row">
+              <div class="col m12 s12">
+                <i class="material-icons">search</i>
+                <div class="input-field inline">
+                  <input id="search" type="search" class="validate">
+                  <label for="search">Buscar</label>
+                </div>
+                <div class="col m12 s12">
+                  <span>
+                    <label>
+                      <input class="with-gap" name="group" type="radio" value='titulo' checked/>
+                      <span>Título</span>
+                    </label>
+                    <label>
+                      <input class="with-gap" name="group" type="radio" value='categoria'/>
+                      <span>Categoría</span>
+                    </label>
+                    <label>
+                      <input class="with-gap" 
+                      name="group" type="radio"value='autor' />
+                      <span>Autor</span>
+                    </label>
+                    <label>
+                      <input class="with-gap" 
+                      name="group" type="radio" value='isbn'/>
+                      <span>ISBN</span>
+                    </label>
+                    <label>
+                      <input class="with-gap" 
+                      name="group" type="radio" value='precio'/>
+                      <span>Precio</span>
+                    </label>
+                  </span>
+                </div>
+
+              </div>
+            </div>
+            <table class="responsive-table striped" id="tabla">
+              <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>ISBN</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th></th>
+                </tr>
+              </thead>
+      
+              <tbody id="table-body">
+                <!-- Contenido dinámico -->
+              </tbody>
+            </table>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
